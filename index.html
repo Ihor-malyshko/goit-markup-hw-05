@@ -40,7 +40,7 @@
       <div class="container">
 
         <h1 class="section-one-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="section-one-button">Order Service</button>
+        <button type="button" class="section-one-button" data-modal-open>Order Service</button>
       </div>
     </section>
     <section class="section-two">
@@ -370,13 +370,28 @@
           </li>
         </ul>
       </div>
-    </div>
+      <div class="footer-subscribe">
+        <p class="footer-social-title">Subscribe</p>
+        <form class="footer-subscribe-form" action="">
+          <label>
+            <input class="footer-subscribe-input" type="email" name="email" placeholder="E-mail">
+          </label>
+          <button class="footer-subscribe-button" type="submit">Subscribe
+            <svg width="16" height="16" class="subscribe-svg">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
 
   </footer>
 
 
   <div class="backdrop" data-modal>
     <div class="modal">
+      <div>
+        <h2 class="modal-title">Order Our Service</h2>
+      </div>
       <button class="modal-close-btn" type="button" data-modal-close>
         close
       </button>
