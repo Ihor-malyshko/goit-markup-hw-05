@@ -432,7 +432,7 @@
             </svg>
           </div>
         </div>
-        <div>
+        <div class="modal-input-wrapper">
           <label class="modal-label" for="user-comment">
             Comment
           </label>
@@ -440,7 +440,18 @@
         </div>
 
         <!-- П'ятим дочірнім елементом форми є div, що є контейнером для чекбоксу з label -->
-        <div>
+        <div class="modal-checkbox">
+          <input class="modal-checkbox-input visually-hidden" type="checkbox" id="user-privacy" value="true"
+            name="user-privacy" />
+          <label class="modal-checkbox-label" for="user-privacy">
+            <span class="modal-checkbox-span">
+              <svg width="10" height="8" class="modal-check-input-svg">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the <a href="#" class="modal-privacy-link">Privacy Policy</a>
+          </label>
+
         </div>
 
         <button class="modal-button" type="submit">Submit</button>
